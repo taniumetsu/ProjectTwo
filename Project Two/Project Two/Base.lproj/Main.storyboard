@@ -15,14 +15,43 @@
                     <view key="view" contentMode="scaleToFill" id="Cfv-eG-eXX">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aSg-at-Ip1">
+                                <rect key="frame" x="72" y="267" width="248" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07R-nG-Cc4">
+                                <rect key="frame" x="154" y="482" width="85" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Convert"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="51G-ak-ApL" eventType="touchUpInside" id="kkZ-eb-ycu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nH2-D6-hR2">
+                                <rect key="frame" x="29" y="561" width="334" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="RFu-I5-ljV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="WYv-yY-fgt"/>
+                    <connections>
+                        <outlet property="buttonOne" destination="07R-nG-Cc4" id="VRa-Xq-ILM"/>
+                        <outlet property="labelOne" destination="nH2-D6-hR2" id="gq2-Kq-sEk"/>
+                        <outlet property="textField" destination="aSg-at-Ip1" id="Wa1-sw-hYM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x1G-61-fbo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="279" y="-108"/>
+            <point key="canvasLocation" x="278.62595419847327" y="-108.45070422535211"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="0hn-KM-sTx">
@@ -158,10 +187,10 @@
             </objects>
             <point key="canvasLocation" x="-558.01526717557249" y="-770.4225352112677"/>
         </scene>
-        <!--Weather-->
+        <!--Weather Converter-->
         <scene sceneID="gxV-jB-hWg">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Jm-N7-Rey" sceneMemberID="viewController">
+                <navigationController title="Weather Converter" automaticallyAdjustsScrollViewInsets="NO" id="7Jm-N7-Rey" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Weather" image="cloud.drizzle.fill" catalog="system" id="RWR-LV-tUX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aPq-DU-3iQ">
