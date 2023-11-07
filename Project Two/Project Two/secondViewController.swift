@@ -14,6 +14,7 @@ class secondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Weather Converter"
         labelOne.text = ""
         textField.text = "Enter Degrees Fahrenheit"
         
